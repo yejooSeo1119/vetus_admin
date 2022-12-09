@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="sign-wrap">
+        <div class="content">
+            <div class="mt150"></div>
+            <div class="title" style="border: 0; text-align: center;">
+                <h2><a href="./index.html">Sign Up</a></h2>
+            </div>
+            <div class="mt100"></div>
+            <div class="sign">
+                <div class="data">
+                    <div class="mt10"></div>
+                    <div class="datatitle">회원정보를 입력해주세요.</div>
+                    <div class="mt10"></div>
+                    <div class="table-type1">
+                        <form action="" method="post" id="signform" name="signform" role="form">
+                            <table>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="80%">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            아이디
+                                        </th>
+                                        <td>
+                                            <input type="text" name="adminId" id="adminId" class="col70"
+                                                placeholder="영문(소문자), 숫자 포함 4자리 이상" required>
+                                            &nbsp;
+                                            <button type="submit" class="btn col15">중복확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            비밀번호
+                                        </th>
+                                        <td>
+                                            <input type="password" name="adminIdPassword" id="adminIdPassword"
+                                                class="col100" placeholder="영문(소문자), 숫자 포함 8자리 이상" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            비밀번호 확인
+                                        </th>
+                                        <td>
+                                            <input type="password" name="adminIdPassword2" id="adminIdPassword2"
+                                                class="col100" placeholder="영문(소문자), 숫자 포함 8자리 이상" required>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            전화번호
+                                        </th>
+                                        <td>
+                                            <input type="text" name="adminIdTelNum" id="adminIdTelNum1" class="numonly"
+                                                maxlength="4">
+                                            &nbsp;&nbsp;-&nbsp;&nbsp;
+                                            <input type="text" name="adminIdTelNum" id="adminIdTelNum2" class="numonly"
+                                                maxlength="4">
+                                            &nbsp;&nbsp;-&nbsp;&nbsp;
+                                            <input type="text" name="adminIdTelNum" id="adminIdTelNum3" class="numonly"
+                                                maxlength="4">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            <span class="star">*</span>
+                                            닉네임
+                                        </th>
+                                        <td>
+                                            <input type="text" name="adminNick" id="adminNick" class="col70" required>
+                                            <button type="submit" class="btn col15">중복확인</button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            생년월일
+                                        </th>
+                                        <td>
+                                            <input type="date" name="adminBirth" id="adminBirth" class="col100">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            이메일
+                                        </th>
+                                        <td>
+                                            <input type="email" name="adminEmail" id="adminEmail" class="col100">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </form>
+                    </div>
+                </div>
+                <!-- data -->
+                <div class="mt50"></div>
+                <div class="sign-btn">
+                    <ul>
+                        <li><a href="javascript:;"
+                                onclick="alert('회원가입이 완료되었습니다.'); document.location.href='./com-member.html'"
+                                class="check" id="membSumbit" role="button">확인</a></li>
+                        <li><a href="javascript:;"
+                                onclick="alert('회원가입이 취소되었습니다.'); document.location.href='./index.html'" class="cancle"
+                                role="button">취소</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- div -->
+            <div class="mt150"></div>
+        </div>
+
+    </div>
+    <!-- wrap -->
+
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+</body>
+
+</html>

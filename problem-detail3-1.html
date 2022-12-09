@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="problem-detail3-1-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html" class="on">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <div class="detail-inner">
+                <h4>문제명</h4>                
+                <div class="btnbox" style="float: right; position: relative; right: -200px; top: 40px;"> 
+                    <button class="delete1"><a href="#"onclick="alert('삭제되었습니다.');">삭제</a></button>
+                </div>
+                <div class="mt50"></div>
+                <div class="tab-box">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1"><a href="./problem-datail1.html">문제정립</a></li>
+                        <li class="tab-link" data-tab="tab-2"><a href="./problem-detail2.html">의견교류</a></li>
+                        <li class="tab-link" data-tab="tab-3"><a href="./problem-detail3-1.html"
+                                class="current">해결방안</a></li>
+                        <li class="tab-link" data-tab="tab-4"><a href="./problem-detail4.html">실행계획</a></li>
+                    </ul>
+                </div>
+                <!-- tab-box -->
+                <div class="mt50"></div>
+                <div id="tab-03" class="tab-content current">
+                    <div id="boardTab03" class="boardTab">
+                        <div class="board">
+                            <table class="boardList">
+                                <colgroup>
+                                    <col width="15%">
+                                    <col width="35%">
+                                    <col width="10%">
+                                    <col width="20%">
+                                    <col width="20%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>구분</th>
+                                        <th>단계</th>
+                                        <th>작성자</th>
+                                        <th>보상금(만원)</th>
+                                        <th>종료일</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td colspan="4" class="displaynone">작성한 글이 없습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType1"><label for="boardType1" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType2"><label for="boardType2" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType3"><label for="boardType3" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType4"><label for="boardType4" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType5"><label for="boardType5" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType6"><label for="boardType6" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType7"><label for="boardType7" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType8"><label for="boardType8" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType9"><label for="boardType9" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="boardType"><input type="checkbox" id="boardType10"><label for="boardType10" style="padding-left: 5px;">해결방안</label></th>                                            
+                                        </td>
+                                        <td class="boardStep col60" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            STS미분 더스트 펠릿의 상온강도를 획기적으로 향상시키는 방안
+                                        </td>
+                                        <td>홍길동 전문가</td>
+                                        <td class="boardReward" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            100
+                                        </td>
+                                        <td class="boardEnd" onclick="document.location.href='./Problem-detail3-2.html'"
+                                        style="cursor: pointer;">
+                                            2022.00.00
+                                        </td>
+                                    </tr>
+                                   
+                                </tbody>
+                            </table>
+                            <div class="mt100"></div>
+                        </div>
+                        <!-- board -->                        
+                        <div class="mt100"></div>
+                        <div class="paging">
+                            <p>
+                                <a href="#none" class="fisrt">&lt;&lt;</a>
+                                <a href="#none">&lt;</a>
+                            </p>
+                            <ol>
+                                <li><a href="#" class="this">1</a></li>
+                                <li><a href="#" class="other">2</a></li>
+                                <li><a href="#" class="other">3</a></li>
+                                <li><a href="#" class="other">4</a></li>
+                            </ol>
+                            <p>
+                                <a href="#none">&gt;</a>
+                                <a href="#none" class="last">&gt;&gt;</a>
+                            </p>
+                        </div>
+                        <!-- paging -->
+                    </div>
+                    <!-- boardTab -->
+                </div>
+                <!-- tab-03 -->               
+            </div>
+            <!-- inner -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- wrap -->
+
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="./script/admin.jq.js"></script>
+        <script>
+            //popup tab 
+            $(document).ready(function () {
+
+                $('ul.tabs li').click(function () {
+                    var tab_id = $(this).attr('data-tab');
+
+                    $('ul.tabs li').removeClass('current');
+                    $('.tab-content').removeClass('current');
+
+                    $(this).addClass('current');
+                    $("#" + tab_id).addClass('current');
+                })
+
+            })
+
+        </script>
+</body>
+
+</html>

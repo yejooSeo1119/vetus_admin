@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="com-member-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent on" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <h4 class="title">회원관리-기업</h4>
+            <div class="mt50"></div>
+            <div class="btnbox">    
+                <button class="exel1"><a href="#">엑셀 내보내기</a></button>
+                <button class="delete1"><a href="#"onclick="alert('삭제되었습니다.');">삭제</a></button>
+            </div>
+            <div class="search-box">
+                <form action="" name="searchForm" method="post">
+                    <select name="opt" class="opt">
+                        <option value="total">통합검색</option>
+                        <option value="id">ID</option>
+                        <option value="com">사업체명</option>
+                        <option value="ceo">대표자명</option>
+                        <option value="tel">대표전화번호</option>
+                    </select>
+                    <div class="search">
+                        <input type="text" class="search-input">
+                        <input type="image" class="search-input2" alt="검색" src="./images/search.png">
+                    </div>
+            </div>
+            <!-- btnbox -->
+            <div class="member">
+                <table class="member-table">
+                    <colgroup>
+                        <col width="8%">
+                        <col width="12.5%">
+                        <col width="12.5%">
+                        <col width="12.5%">
+                        <col width="15.5%">
+                        <col width="15.5%">
+                        <col width="15.5%">
+                        <col width="8%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="memberNo"><input type="checkbox" id="memberNo"><label for="memberNo" style="padding-left: 5px;">No.</label></th>
+                            <th>회원 ID</th>
+                            <th>사업체명</th>
+                            <th>사업자등록번호</th>
+                            <th>대표자명</th>
+                            <th>대표전화번호</th>
+                            <th>가입일자</th>
+                            <th class="icon"><img src="./images/retouch.png" alt="수정"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox" id="memberNo1"><label for="memberNo1" style="padding-left: 5px;">1</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo2"><label for="memberNo2" style="padding-left: 5px;">2</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo3"><label for="memberNo3" style="padding-left: 5px;">3</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo4"><label for="memberNo4" style="padding-left: 5px;">4</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo5"><label for="memberNo5" style="padding-left: 5px;">5</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo6"><label for="memberNo6" style="padding-left: 5px;">6</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo7"><label for="memberNo7" style="padding-left: 5px;">7</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo8"><label for="memberNo8" style="padding-left: 5px;">8</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo9"><label for="memberNo9" style="padding-left: 5px;">9</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="memberNo col5">
+                                <input type="checkbox"  id="memberNo10"><label for="memberNo10" style="padding-left: 5px;">10</label>
+                            </td>
+                            <td class="memberId col5">회원 ID</td>
+                            <td class="memberCom col5">사업체명</td>
+                            <td class="memberComnum col10">000-00-00000</td>
+                            <td class="memberName col5">홍길동</td>
+                            <td class="memberNum col10">000-0000-0000</td>
+                            <td class="memberDate col5">2022.00.00 &nbsp;22:22</td>
+                            <td class="memberRet col5"><a href="./member-detail.html">수정</a></td>
+                        </tr>
+                       
+                    </tbody>
+                </table>
+                <div class="mt50"></div>
+                <div class="paging">
+                    <p>
+                        <a href="#none" class="fisrt">&lt;&lt;</a>
+                        <a href="#none">&lt;</a>
+                    </p>
+                    <ol>
+                        <li><a href="#" class="this">1</a></li>
+                        <li><a href="#" class="other">2</a></li>
+                        <li><a href="#" class="other">3</a></li>
+                        <li><a href="#" class="other">4</a></li>
+                    </ol>
+                    <p>
+                        <a href="#none">&gt;</a>
+                        <a href="#none" class="last">&gt;&gt;</a>
+                    </p>
+                </div>
+                <!-- paging -->
+            </div>
+            <!-- com-member -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- com-member-wrap -->
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+</body>
+
+</html>

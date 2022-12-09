@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="problem-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html" class="on">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <h4 class="title">회원관리-기업</h4>
+            <div class="mt50"></div>
+            <div class="btnbox">
+                <button class="delete1"><a href="#" onclick="alert('삭제되었습니다.');">삭제</a></button>
+            </div>
+            <div class="search-box">
+                <form action="" name="searchForm" method="post">
+                    <select name="opt" class="opt">
+                        <option value="total">통합검색</option>
+                        <option value="id">ID</option>
+                        <option value="com">사업체명</option>
+                        <option value="ceo">대표자명</option>
+                        <option value="tel">대표전화번호</option>
+                    </select>
+                    <div class="search">
+                        <input type="text" class="search-input">
+                        <input type="image" class="search-input2" alt="검색" src="./images/search.png">
+                    </div>
+            </div>
+            <!-- btnbox -->
+            <div class="problem">
+                <table class="problem-table">
+                    <colgroup>
+                        <col width="3%">
+                        <col width="28%">
+                        <col width="10%">
+                        <col width="13%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="10%">
+                        <col width="5%">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="listNo"><input type="checkbox" id="listNo"><label for="listNo"
+                                    style="padding-left: 5px;">No.</label></th>
+                            <th>문제명</th>
+                            <th>제안기업</th>
+                            <th>기술분야</th>
+                            <th>보상금(만원)</th>
+                            <th>종료일</th>
+                            <th>관리ACE</th>
+                            <th>관련전문가</th>
+                            <th class="icon"><img src="./images/retouch.png" alt="수정"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo1"><label for="listNo1"
+                                    style="padding-left: 5px;">1</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo2"><label for="listNo2"
+                                    style="padding-left: 5px;">2</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo3"><label for="listNo3"
+                                    style="padding-left: 5px;">3</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo4"><label for="listNo4"
+                                    style="padding-left: 5px;">4</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo5"><label for="listNo5"
+                                    style="padding-left: 5px;">5</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo6"><label for="listNo6"
+                                    style="padding-left: 5px;">6</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo7"><label for="listNo7"
+                                    style="padding-left: 5px;">7</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo8"><label for="listNo8"
+                                    style="padding-left: 5px;">8</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo9"><label for="listNo9"
+                                    style="padding-left: 5px;">9</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                        <tr>
+                            <td class="listNo col5">
+                                <input type="checkbox" id="listNo10"><label for="listNo10"
+                                    style="padding-left: 5px;">10</label>
+                            </td>
+                            <td class="listName col5">STS 미분 더스트 펠릿의 상온 강도를 획기적으로 향상시키는 방안</td>
+                            <td class="listCom col5">(주) 철강기업</td>
+                            <td class="listType col10">STS 더스트 처리기술</td>
+                            <td class="listReward col5">100</td>
+                            <td class="listDate col10">2022.00.00</td>
+                            <td class="listAce col5">홍길동</td>
+                            <td class="listPro col5">관련전문가</td>
+                            <td class="listRet col5"><a href="./problem-datail1.html">수정</a></td>
+                        </tr>
+                    </tbody>
+                    <div class="mt50"></div>
+                </table>
+                <div class="mt50"></div>
+                <div class="paging">
+                    <p>
+                        <a href="#none" class="fisrt">&lt;&lt;</a>
+                        <a href="#none">&lt;</a>
+                    </p>
+                    <ol>
+                        <li><a href="#" class="this">1</a></li>
+                        <li><a href="#" class="other">2</a></li>
+                        <li><a href="#" class="other">3</a></li>
+                        <li><a href="#" class="other">4</a></li>
+                    </ol>
+                    <p>
+                        <a href="#none">&gt;</a>
+                        <a href="#none" class="last">&gt;&gt;</a>
+                    </p>
+                </div>
+                <!-- paging -->
+            </div>
+            <!-- com-member -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- com-member-wrap -->
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+</body>
+
+</html>

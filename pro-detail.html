@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="member-detail-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent on" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <h4 class="title">회원관리-전문가</h4>
+            <div class="mt30"></div>
+            <div class="pro-detail">                
+                <form action="" method="post" id="signform" name="signform" role="form">
+                    <table>
+                        <colgroup>
+                            <col width="15%">
+                            <col width="80%">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>회원ID</th>
+                                <td style="border-top: 1px solid #ededed;">
+                                    <input type="text" name="proId" id="proId" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    이름
+                                </th>
+                                <td>
+                                    <input type="text" name="proNam" id="proNam" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    닉네임
+                                </th>
+                                <td>
+                                    <input type="text" name="proNick" id="proNick" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    생년월일
+                                </th>
+                                <td>
+                                    <input type="text" name="proDate" id="proDate" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    전화번호
+                                </th>
+                                <td>
+                                    <input type="text" name="proNum" id="proNum" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    이메일
+                                </th>
+                                <td>
+                                    <input type="text" name="proEmail" id="proEmail" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    전문분야
+                                </th>
+                                <td>
+                                    <input type="text" name="proField" id="proField" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    경력(년)
+                                </th>
+                                <td>
+                                    <input type="text" name="proCareer" id="proCareer" class="col100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    커뮤니티 가입
+                                </th>
+                                <td class="checkbox" style="padding: 10px">
+                                    <input type="checkbox" name="check-sign1" id="check-sign3">
+                                    <label for="">예</label>
+                                    <input type="checkbox" name="check-sign2" id="check-sign4">
+                                    <label for="">아니오</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    구분
+                                </th>
+                                <td class="radiobox" style="padding: 10px">
+                                    <input type="radio" name="nomal" id="nomal">
+                                    <label>일반</label>
+                                    <input type="radio" name="ace" id="ace">
+                                    <label>에이스</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    경력 요약설명
+                                </th>
+                                <td>
+                                    <textarea name="proInfor" id="proInfor" class="col100"></textarea>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                    <div class="mt30"></div>
+                </form>
+                <div class="mt30"></div>
+                <div class="btnbox">
+                    <button class="retouch"><a href="javascript:;"
+                        onclick="alert('수정되었습니다.'); document.location.href='./pro-member.html'">수정</a></button>
+                    <button class="cancle"><a href="./pro-member.html">취소</a></button>
+                </div>
+                <div class="mt50"></div>
+            </div>
+            <!-- memver-detail -->
+        </div>
+        <!-- container -->
+    </div>
+    <!-- com-member-wrap -->
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+</body>
+
+</html>

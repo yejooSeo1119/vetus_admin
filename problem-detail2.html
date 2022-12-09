@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="problem-detail2-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html" class="on">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <div class="detail-inner">
+                <h4>문제명</h4>
+                <div class="mt50"></div>
+                <div class="tab-box">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1"><a href="./problem-datail1.html" >문제정립</a></li>
+                        <li class="tab-link" data-tab="tab-2"><a href="./problem-detail2.html" class="current">의견교류</a></li>
+                        <li class="tab-link" data-tab="tab-3"><a href="./problem-detail3-1.html">해결방안</a></li>
+                        <li class="tab-link" data-tab="tab-4"><a href="./problem-detail4.html">실행계획</a></li>
+                    </ul>
+                </div>
+                <!-- tab-box -->
+                <div class="mt50"></div>
+                <div id="tab-02" class="tab-content current">
+                    <div id="boardTab02" class="boardTab">
+                        <div class="writer">
+                            <div class="writer-box">
+                                <span class="name">홍길동</span>
+                                <textarea placeholder="댓글을 작성해주세요."
+                                    style="resize: none; box-sizing: border-box; border: 0; background-color: transparent; overflow-wrap: break-word; overflow: hidden;"></textarea>
+                            </div>
+                            <!-- writer-box -->
+                            <div class="submitbtn">
+                                <a href="#" role="button">등록</a>
+                            </div>
+                        </div>
+                        <!-- writer -->
+                        <div class="comment">
+                            <div class="comment-box">
+                                <ul class="comment-list">
+                                    <li class="comment-item">
+                                        <div class="comment-area">
+                                            <div class="comment-text">
+                                                <div class="nick">
+                                                    <a href="#">관리자</a>
+                                                </div>
+                                                <!-- nick -->
+                                                <div class="text">
+                                                    <p class="text-view">
+                                                        <span class="text-comment">
+                                                            댓글내용
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <!-- text -->
+                                                <div class="info">
+                                                    <span class="info-date">2022.00.00. 22:22</span>
+                                                    <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    <a href="#" role="button" class="delete-button">삭제</a>
+                                                    <a href="#" role="button" class="retouch-button">수정</a>
+                                                </div>
+                                                <!-- info -->
+                                            </div>
+                                        </div>
+                                        <!-- comment-area -->
+                                    </li>
+                                    <!-- comment-item -->
+                                    <li class="comment-item comment-item-reply">
+                                        <div class="comment-area">
+                                            <div class="comment-text">
+                                                <div class="nick">
+                                                    <a href="#">홍길동</a>
+                                                </div>
+                                                <!-- nick -->
+                                                <div class="text">
+                                                    <p class="text-view">
+                                                        <span class="text-comment">
+                                                            댓글내용
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <!-- text -->
+                                                <div class="info">
+                                                    <span class="info-date">2022.00.00. 22:22</span>
+                                                    <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    <a href="#" role="button" class="delete-button">삭제</a>
+                                                    <a href="#" role="button" class="retouch-button">수정</a>
+                                                </div>
+                                                <!-- info -->
+                                            </div>
+                                        </div>
+                                        <!-- comment-area -->
+                                    </li>
+                                    <!-- comment-item-reply -->
+                                    <li class="comment-item">
+                                        <div class="comment-area">
+                                            <div class="comment-text">
+                                                <div class="nick">
+                                                    <a href="#">홍길동</a>
+                                                </div>
+                                                <!-- nick -->
+                                                <div class="text">
+                                                    <p class="text-view">
+                                                        <span class="text-comment">
+                                                            댓글내용
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <!-- text -->
+                                                <div class="info">
+                                                    <span class="info-date">2022.00.00. 22:22</span>
+                                                    <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    <a href="#" role="button" class="delete-button">삭제</a>
+                                                    <a href="#" role="button" class="retouch-button">수정</a>
+                                                </div>
+                                                <!-- info -->
+                                            </div>
+                                        </div>
+                                        <!-- comment-area -->
+                                    </li>
+                                    <!-- comment-item -->
+                                    <li class="comment-item comment-item-reply">
+                                        <div class="comment-area">
+                                            <div class="comment-text">
+                                                <div class="nick">
+                                                    <a href="#">홍길동</a>
+                                                </div>
+                                                <!-- nick -->
+                                                <div class="text">
+                                                    <p class="text-view">
+                                                        <span class="text-comment">
+                                                            댓글내용
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <!-- text -->
+                                                <div class="info">
+                                                    <span class="info-date">2022.00.00. 22:22</span>
+                                                    <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    <a href="#" role="button" class="delete-button">삭제</a>
+                                                    <a href="#" role="button" class="retouch-button">수정</a>
+                                                </div>
+                                                <!-- info -->
+                                            </div>
+                                        </div>
+                                        <!-- comment-area -->
+                                    </li>
+                                    <!-- comment-item-reply -->
+                                    <li class="comment-item comment-item-reply">
+                                        <div class="comment-area">
+                                            <div class="comment-text">
+                                                <div class="nick">
+                                                    <a href="#">홍길동</a>
+                                                </div>
+                                                <!-- nick -->
+                                                <div class="text">
+                                                    <p class="text-view">
+                                                        <span class="text-comment">
+                                                            댓글내용
+                                                        </span>
+                                                    </p>
+                                                </div>
+                                                <!-- text -->
+                                                <div class="info">
+                                                    <span class="info-date">2022.00.00. 22:22</span>
+                                                    <a href="#" role="button" class="info-button">답글쓰기</a>
+                                                    <a href="#" role="button" class="delete-button">삭제</a>
+                                                    <a href="#" role="button" class="retouch-button">수정</a>
+                                                </div>
+                                                <!-- info -->
+                                            </div>
+                                        </div>
+                                        <!-- comment-area -->
+                                    </li>
+                                    <!-- comment-item-reply -->
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- comment -->
+                        <div class="mt50"></div>
+                    </div>
+                    <!-- tab02 -->
+                </div>
+                <!-- tab-02 -->
+                <div class="mt30"></div>
+                <div class="btnbox" style="float: right; position: relative; right: -200px;"> 
+                    <button class="retouch"><a href="javascript:;"
+                        onclick="alert('저장되었습니다.'); document.location.href='./problemlist.html'">저장</a></button>
+                </div>
+            </div>
+            <!-- com-member-wrap -->
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+    <script>
+        //popup tab 
+        $(document).ready(function () {
+
+            $('ul.tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+
+    </script>
+</body>
+</html>

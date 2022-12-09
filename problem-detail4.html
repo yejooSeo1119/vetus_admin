@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetus Admin</title>
+    <link rel="stylesheet" href="./css/admin-style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrap" id="problem-detail4-wrap">
+        <aside>
+            <nav class="nav fixed">
+                <h1><img src="./images/logo_bk.svg" alt="로고"></h1>
+                <ul>
+                    <li>
+                        <a href="#none">
+                            <h6>회원관리</h6>
+                        </a>
+                    </li>
+                    <li><a href="./com-member.html" class="indent" style="font-size: 20px;">- 기업</a></li>
+                    <li><a href="./pro-member.html" class="indent" style="font-size: 20px;">- 전문가</a></li>
+                    <li>
+                        <a href="./problemlist.html" class="on">
+                            <h6>문제정의 관리</h6>
+                        </a>
+                    </li>
+                    <div class="bottomNav">
+                        <span class="blank"><a href="#" target="_blank" rel="noopener noreferrer">Vetus 바로가기</a></span>                       
+                        <span class="logout"><a href="./index.html">로그아웃</a></span>
+                    </div>
+                </ul>
+            </nav>
+        </aside>
+        <!-- nav -->
+        <div class="container">
+            <div class="detail-inner">
+                <h4>문제명</h4>
+                <div class="mt50"></div>
+                <div class="tab-box">
+                    <ul class="tabs">
+                        <li class="tab-link" data-tab="tab-1"><a href="./problem-datail1.html" >문제정립</a></li>
+                        <li class="tab-link" data-tab="tab-2"><a href="./problem-detail2.html">의견교류</a></li>
+                        <li class="tab-link" data-tab="tab-3"><a href="./problem-detail3-1.html">해결방안</a></li>
+                        <li class="tab-link" data-tab="tab-4"><a href="./problem-detail4.html" class="current">실행계획</a></li>
+                    </ul>
+                </div>
+                <div id="tab-04" class="tab-content current">
+                    <div class="mt50"></div>
+                    <div id="boardTab04" class="boardTab">
+                        <div class="detail-box01 detail-box">
+                            <strong>문제/과제 개요</strong>
+                            <div class="box01-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!-- 문제/과제 개요 -->
+                        <div class="mt50"></div>
+                        <div class="detail-box02 detail-box">
+                            <strong>예상 목표/지수(Should-Be)</strong>
+                            <div class="box02-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!-- 예상 목표 -->
+                        <div class="mt50"></div>
+                        <div class="detail-box03 detail-box">
+                            <strong>해결방안(Action)</strong>
+                            <div class="box03-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!-- 해결방안 -->
+                        <div class="mt50"></div>
+                        <div class="detail-box04 detail-box">
+                            <strong>예상 추진 일정</strong>
+                            <div class="box04-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!--예상 추진 일정 -->
+                        <div class="mt50"></div>
+                        <div class="detail-box05 detail-box">
+                            <strong>예상 리스크 평가 및 회피</strong>
+                            <div class="box05-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!--예상 리스크 -->
+                        <div class="mt50"></div>
+                        <div class="detail-box06 detail-box">
+                            <strong>팀구성 및 담당업무</strong>
+                            <div class="box06-cont cont-box">
+                                <textarea></textarea>
+                            </div>
+                        </div>
+                        <!-- 팀구성 -->
+                        <div class="mt50"></div>
+                    </div>
+                    <!-- tab04 --> 
+                </div>
+                <!-- tab-04 -->
+                <div class="mt30"></div>
+                <div class="btnbox" style="float: right; position: relative; right: -200px;"> 
+                    <button class="retouch"><a href="javascript:;"
+                        onclick="alert('수정되었습니다.'); document.location.href='./problemlist.html'">수정</a></button>
+                </div>
+            </div>
+            <!-- com-member-wrap -->
+
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="./script/admin.jq.js"></script>
+    <script>
+        //popup tab 
+        $(document).ready(function () {
+
+            $('ul.tabs li').click(function () {
+                var tab_id = $(this).attr('data-tab');
+
+                $('ul.tabs li').removeClass('current');
+                $('.tab-content').removeClass('current');
+
+                $(this).addClass('current');
+                $("#" + tab_id).addClass('current');
+            })
+
+        })
+
+    </script>
+</body>
+</html>
